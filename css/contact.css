@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=nunito:400,600,700,800,900&display=swap");
+
+root{
+    --green:#007ea7;
+    --blue:#192a56;
+    --ligt-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.header{
+	width: 100%;
+	height: 150px;
+	display: flex;
+	background-color: #192a56;
+}
+
+
+h1{
+    color:#ffff;
+}
+
+.black{
+	color: black;
+}
+
+/*desktop nav switch*/
+
+@media screen and (min-width: 601px) {
+	.mobilenav{
+		display: none;
+	}
+}
+
+/*mobile nav switch*/
+
+@media screen and (max-width: 600px) {
+	.profile-icon{
+		display: none;
+	}
+	.navlist{
+		display: none;
+	}
+}
+
+.mobilenav{
+	font-size: 50px;
+	cursor: pointer;
+    color: #ffff;
+}
+.ham-menu{
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	position: relative;
+}
+
+.ham-menu span{
+	height: 5px;
+	width: 100%;
+	background-color: #ffff;
+	border-radius: 25px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transform: translate(-50%, -50%);
+	transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+	top: 25%;
+}
+.ham-menu span:nth-child(3) {
+	top: 65%;
+}
+
+.ham-menu.active span:nth-child(1) {
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(45eg);
+}
+.ham-menu.active span:nth-child(2) {
+	opacity: 0;
+}
+.ham-menu.active span:nth-child(3){
+	top: 50%;
+	transform: translate(-50%, 50%)rotate(-450deg);
+}
+
+.ham-menu{
+	font-size: 50px;
+	cursor: pointer;
+    color: #192a56;
+}
+
+#FIRST{
+	width: 70%;
+	padding-top: 5%;
+}
+
+.title2{
+    text-align:center; 
+	
+	background-color:#b7b3b3;
+	padding: 5%; 
+	font-size:15px;
+	color: black;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+}
+
+#hours{
+	
+	padding-top: 10%;
+}
+
+.Explore{
+	text-align:center; 
+	background-color:#192a56; 
+	padding: 3%; 
+	font-size:20px;
+	color: #fff;
+}
